@@ -1,9 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    './src/pages/**/*.page.{js,jsx,ts,tsx}',
+    './src/components/**/*.page.{js,jsx,ts,tsx}',
+  ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    extend: {
+      colors: {
+        blackLight: '#3F3F3F',
+        blueLight: '#5DABF2',
+        brown: '#CE8680',
+        grayLight: '#A6A6A6',
+        greenLight: '#55C0A6',
+        pinkLight: '#FFADBE',
+        purpleLight: '#7C548B',
+        redLight: '#F5786E',
+        whiteLight: '#E8E8E8',
+        yellowLight: '#FECE5A'
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
